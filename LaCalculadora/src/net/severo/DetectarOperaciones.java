@@ -9,6 +9,11 @@ public class DetectarOperaciones implements ActionListener {
 	private LogicaDeCalculadora logic;
 	private JLabel display;
 
+	public DetectarOperaciones(LogicaDeCalculadora logic, JLabel display) {
+		this.logic = logic;
+		this.display = display;
+	}
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		String command = e.getActionCommand();
